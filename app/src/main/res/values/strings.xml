@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Buttons</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="textview">TextView</string>
+    <string name="tea">Tea</string>
+    <string name="coffee">Coffee</string>
+    <string name="checked_option">Checked Option</string>
+</resources>

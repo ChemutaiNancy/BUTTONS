@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:background="@drawable/ic_cloud_black_24dp"
+         />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_toRightOf="@id/button"
+        android:background="@drawable/ic_cloud_black_24dp"
+        android:layout_toEndOf="@id/button" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/ic_cloud_black_24dp" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        android:layout_below="@id/button3">
+
+        <RadioButton
+            android:id="@+id/rbMale"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/male"
+            android:onClick="clickGender"/>
+
+        <RadioButton
+            android:id="@+id/rbFemale"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/female"
+            android:onClick="clickGender"/>
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/txtDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/radioGroup"
+        android:layout_marginTop="20dp"
+        android:text="@string/textview" />
+
+    <CheckBox
+        android:id="@+id/cboTea"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtDisplay"
+        android:text="@string/tea"
+        android:onClick="checkedBox"/>
+
+    <CheckBox
+        android:id="@+id/cboCoffee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/coffee"
+        android:layout_below="@id/cboTea"
+        android:onClick="checkedBox"/>
+
+    <TextView
+        android:id="@+id/txtDisplayOption"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_below="@id/cboCoffee"
+        android:layout_marginTop="20dp"
+        android:text="@string/checked_option" />
+</RelativeLayout>
